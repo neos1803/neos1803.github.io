@@ -4,161 +4,187 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="output.css">
+    <link rel="stylesheet" type="text/css" href="css/new.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Robot|Source+Code+Pro|Inconsolata">
+
     <title>Tailwind CSS Demo</title>
 </head>
-<body>
-    <div class="container mx-auto my-12">
-        <div class="mt-50 mb-50">
-            <h1 class="font-mono font-hairline antialiased text-5xl inline-block">
-                <strong>Nanda</strong> Wardi Purba
-            </h1>
-            <span class="font-mono font-hairline antialiased text-xl text-blue-500 inline-block align-top mb-5 ml-8 rounded-lg bg-blue-200 bg-opacity-50 pt-2 pb-2 pl-10 pr-10">
-                Tech Enthusiast
-            </span>
-            <span class="font-mono font-hairline text-xl text-opacity-50 block">
-                nandawardipurba@gmail.com
-            </span>
-            <h2 class="font-mono font-hairline text-3xl mt-10">
-                Telecommunication Engineering graduate with programming and competitive gaming as field of interest
-            </h2>
+<body class="bg-gray-200">
+   <div class="flex">
+        <div class="profile w-1/3 h-screen">
+            <div class="topProfile bg-no-repeat bg-center">
+                <!-- <img class ='top-image' src='./asset/1.jpg' alt='picture of a man sitting down viewing graphs off an iPad'> -->
+            </div>
+            <div class="lowProfile">
+                <img class ='profile-image mx-auto' src='./asset/2.jpg' alt='picture of a man sitting down viewing graphs off an iPad'>
+                <div class="link-section mt-4 ml-4" style="font-family: 'Inconsolata', serif;">
+                    <p class="text-4xl">Nanda W. Purba</p>
+                    <p class="text-xl">Tech Enthusiast</p>
+                </div>
+                <div class="mt-4 ml-4" style="font-family: 'Inconsolata', serif;">
+                    <p class="text-sm mb-4">I'm available on:</p>
+                    <a href="https://twitter.com/_NandaPurba_"><img class="inline w-8 mr-4" src="./asset/twitter.png" alt=""></a>
+                    <a href="https://github.com/neos1803?tab=repositories"><img class="inline w-8 mr-4" src="./asset/git.png" alt=""></a>
+                    <a href="https://www.linkedin.com/in/nanda-purba-923121154/"><img class="inline w-8" src="./asset/link.png" alt=""></a>
+                </div>
+            </div>
+            <footer class="mt-24">
+                <div class="mx-16 text-center text-sm" style="font-family: 'Inconsolata', serif;">
+                    <p> COPYRIGHT ©
+                        This website is built by Nanda W. Purba and powered by github.io. 
+                        Be ashamed if you are trying to imitate this imperfect website &#128536;
+                    </p>
+                </div>
+            </footer>
         </div>
-    </div>
-    
-    <div class="container mx-auto my-12 grid grid-cols-2">
-        <div class="font-mono text-2xl">
-            Skills
-            <div class="mt-4 flex mb-4">
-                <h4 class="w-1/4 text-lg text-blue-700">
-                    <strong>Entry level</strong>
-                </h4>
-                <div class="w-3/4 inline-block ml-8">
-                    <h3 class="text-lg text-indigo-500"><strong>Programming Language & Framework</strong></h3>
-                    <h3 class="text-sm text-gray-600">Python, Javascript, Laravel, Nodejs, Express</h3>
+        <div class="info w-2/3">
+            <div id="about" class="about-text text-indigo-600 py-6 px-6 text-3xl" style="font-family: 'Source Code Pro', serif;">
+                <h1>About Me</h1>
+            </div>
+            <div class="about-info py-6 px-6 bg-white mx-6 rounded-lg" style="font-family: 'Inconsolata', serif;">
+                <div class="grid grid-cols-2">
+                    <div class="intro border-r-2 border-black">
+                        <p>Hey, I'm Nanda W. Purba. Ardi, Nanda or Purba, feel free to call me by those names but i prefer being called by Ardi.</p>
+                        <br>
+                        <p>I'm an engineering graduate and currently unemployed, but participating in a corporate full-stack javascript developer training.</p>
+                        <br>
+                        <p>I don't have any professional job experience yet, but i (perhaps) have enough knowledge/understanding in web development, data science and/or python 3 development.
+                        However, as you can see by this page, i'm not that good at front-end development &#128512;
+                        </p>
+                    </div>
+                    <div class="ml-4">
+                        <ol>
+                            <li class="mb-2">
+                                Education(s):
+                                <ol class="ml-4" style="list-style: square;">
+                                    <li>Telecommunication Engineering (B.Eng), Telkom University, 2016 - 2020</li>
+                                </ol>
+                            </li>
+                            <li class="mb-2">
+                                Hobbies:
+                                <ol class="ml-4" style="list-style: square;">
+                                    <li>
+                                        Random Programming -> <a class="hover:text-indigo-600" href="https://github.com/neos1803?tab=repositories">(Check out my github)</a>
+                                    </li>
+                                    <li>
+                                        Anime Bingewatching -> <a class="hover:text-indigo-600" href="https://myanimelist.net/profile/War_D/reviews">(Check out my anime reviews on MAL)</a>
+                                    </li>
+                                    <li>
+                                        Competitive/Non-competitive Gaming
+                                    </li>
+                                </ol>
+                            </li>
+                            <li class="mb-2">
+                                Interest(s):
+                                <ol class="ml-4" style="list-style: square;">
+                                    <li>
+                                        Back-end/API Development
+                                    </li>
+                                    <li>
+                                        Data Science
+                                    </li>
+                                    <li>
+                                        Python 3 Development
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </div>
                 </div>
             </div>
-            <div class="mt-4 flex mb-4">
-                <h4 class="w-1/4 text-lg text-blue-700">
-                    <strong>Junior level</strong>
-                </h4>
-                <div class="w-3/4 inline-block ml-8">
-                    <h3 class="text-lg text-indigo-500"><strong>Network and Cyber Security</strong></h3>
-                    <h3 class="text-sm text-gray-600">Physical Layer, Access Point, Snort</h3>
-                </div>
+            <div id="about" class="about-text text-indigo-600 py-6 px-6 text-3xl" style="font-family: 'Source Code Pro', serif;">
+                <h1>Portfolio</h1>
             </div>
-            <div class="mt-4 flex mb-4">
-                <h4 class="w-1/4 text-lg text-blue-700">
-                    <strong>Junior level</strong>
-                </h4>
-                <div class="w-3/4 inline-block ml-8">
-                    <h3 class="text-lg text-indigo-500"><strong>Data Science</strong></h3>
-                    <h3 class="text-sm text-gray-600">Phyton, Machine Learning Algorithm</h3>
+            <div class="flex">
+                <div class="about-info py-2 px-4 bg-white mx-6 rounded-lg w-1/3" style="font-family: 'Inconsolata', serif;">
+                    <h1 class="text-indigo-600 text-center" style="font-family: 'Source Code Pro', serif;">Javascript</h1>
+                    <hr class="mt-2">
+                    <ol class="ml-4 mt-4" style="list-style: square;">
+                        <li class="mb-4">
+                            <a class="hover:text-indigo-600" href="https://github.com/neos1803/Bootcamp-UT/tree/master/js-cli-app-challenge">CLI App</a>
+                            <br>
+                            <p>A simple Command Line Interface Application that executes several commands</p>
+                        </li>
+                        <li class="mb-4">
+                            <a class="hover:text-indigo-600" href="https://github.com/neos1803/Bootcamp-UT/tree/master/todoapp">Todo App ft Mongoose (CLI Based)</a>
+                            <br>
+                            <p>A simple Command Line Interface Application that executes CRUD command about Todo list which connected to local mongodb server</p>
+                        </li>
+                        <li class="mb-4">
+                            <a class="hover:text-indigo-600" href="https://github.com/neos1803/Bootcamp-UT/tree/master/sequelize">Todo App ft Sequelize (CLI Based)</a>
+                            <br>
+                            <p>A simple Command Line Interface Application that executes CRUD command about Todo list which connected to local mysql server</p>
+                        </li>
+                    </ol>
                 </div>
+                <div class="about-info py-2 px-4 bg-white mx-6 rounded-lg w-1/3" style="font-family: 'Inconsolata', serif;">
+                    <h1 class="text-indigo-600 text-center" style="font-family: 'Source Code Pro', serif;">Python</h1>
+                    <hr class="mt-2">
+                    <ol class="ml-4 mt-4" style="list-style: square;">
+                        <li class="mb-4">
+                            <a class="hover:text-indigo-600" href="https://github.com/neos1803/Bootcamp-UT/tree/master/python-tasks/weathermap_cli">Weather App (CLI Based)</a>
+                            <br>
+                            <p>A simple Command Line Interface Application that executes several commands related to weather condition</p>
+                        </li>
+                        <li class="mb-4">
+                            <a class="hover:text-indigo-600" href="https://github.com/neos1803/learning-python">Simple Python Programs</a>
+                            <br>
+                            <p>It redirects to repository that contains several python programs like hangman game, snake and dice game, etc</p>
+                        </li>
+                        <li class="mb-4">
+                            <a class="hover:text-indigo-600" href="https://github.com/neos1803/learning-with-kaggle">Titanic: Machine Learning From Disaster</a>
+                            <br>
+                            <p>Introduction challenge to data science which taken from Kaggle. This Analyse only has 75% accuracy points &#128531;</p>
+                        </li>
+                    </ol>
+                </div>
+                <div class="about-info py-2 px-4 bg-white mx-6 rounded-lg w-1/3" style="font-family: 'Inconsolata', serif;">
+                    <h1 class="text-indigo-600 text-center" style="font-family: 'Source Code Pro', serif;">Web Development</h1>
+                    <hr class="mt-2">
+                    <ol class="ml-4 mt-4" style="list-style: square;">
+                        <li class="mb-4">
+                            <a class="hover:text-indigo-600" href="https://github.com/neos1803/Bootcamp-UT/tree/master/vuex-app">Simple Vue App ft Vuex & Tailwind</a>
+                            <br>
+                            <p>A simple Vue App that is created for vuex and vue learning purposes</p>
+                        </li>
+                        <li class="mb-4">
+                            <a class="hover:text-indigo-600" href="https://vue-simple-wms.herokuapp.com/">Simple WMS ft Vue and Tailwind</a>
+                            <br>
+                            <p>A simple website for warehouse management system in which admin can see and delete user, doing CRUD on products, etc</p>
+                        </li>
+                        <li class="mb-4">
+                            <a class="hover:text-indigo-600" href="https://simple-wms.herokuapp.com/">Simple WMS API ft Express and Heroku</a>
+                            <br>
+                            <p>A simple REST-API about warehouse management system which consists of several endpoints</p>
+                            <p>Checkout <a class="hover:text-indigo-600" href="https://github.com/dickyfahlevi21/backend-simple-wms">This Repo</a> For Documentation and source code</p>
+                        </li>
+                    </ol>
+                </div>                
             </div>
-            <div class="mt-4 flex mb-4">
-                <h4 class="w-1/4 text-lg text-blue-700">
-                    <strong>Intermediate</strong>
-                </h4>
-                <div class="w-3/4 inline-block ml-8">
-                    <h3 class="text-lg text-indigo-500"><strong>English Language</strong></h3>
-                    <h3 class="text-sm text-gray-600">EPRT: 539</h3>
-                </div>
-            </div>
-            <div class="mt-4 flex mb-4">
-                <h4 class="w-1/4 text-lg text-blue-700">
-                    <strong>Beginner</strong>
-                </h4>
-                <div class="w-3/4 inline-block ml-8">
-                    <h3 class="text-lg text-indigo-500"><strong>Japanese Language</strong></h3>
-                    <h3 class="text-sm text-gray-600">N5 Preparation Class</h3>
-                </div>
+            <div class="about-info py-2 px-4 bg-white mx-auto mt-8 mb-8 rounded-lg w-1/3" style="font-family: 'Inconsolata', serif;">
+                <h1 class="text-indigo-600 text-center" style="font-family: 'Source Code Pro', serif;">Others</h1>
+                <hr class="mt-2">
+                <ol class="ml-4 mt-4" style="list-style: square;">
+                    <li class="mb-4">
+                        <a class="hover:text-indigo-600" href="https://github.com/neos1803/dota2-lore-and-build">Dota 2 Lore and Build</a>
+                        <br>
+                        <p>A simple Android Application which consists of static Dota 2 Hero and Lore data</p>
+                    </li>
+                    <li class="mb-4">
+                        <a class="hover:text-indigo-600" href="https://github.com/neos1803/learning-go">Golang Introduction</a>
+                        <br>
+                        <p>A repository that consists of simple Golang program created for learning purposes</p>
+                    </li>
+                    <li class="mb-4">
+                        <a class="hover:text-indigo-600" href="https://github.com/muhamaddiaz/sekolahku">Sekolahku</a>
+                        <br>
+                        <p>A campus side project, about school learning management system. This supposed-to-be website is built by using Laravel as Back-end framework
+                        and blade only as its Front-end framework</p>
+                    </li>
+                </ol>
             </div>
         </div>
-        <div class="font-mono text-2xl ml-8">
-            Interest
-            <div class="mt-4">
-                <h3 class="text-lg text-indigo-500"><strong>Back-end Development</strong></h3>
-                <h3 class="text-sm text-gray-600">Laravel, Python, Nodejs</h3>
-            </div>
-            <div class="mt-4">
-                <h3 class="text-lg text-indigo-500"><strong>Competitive Gaming</strong></h3>
-                <h3 class="text-sm text-gray-600">DOTA 2, PES E-Sport League</h3>
-            </div>
-            <div class="mt-4">
-                <h3 class="text-lg text-indigo-500"><strong>Data Science</strong></h3>
-                <h3 class="text-sm text-gray-600">Python</h3>
-            </div>
-        </div>
-    </div>
-
-    <div class="container mx-auto my-12 grid grid-cols-2">
-        <button class="max-w-md transform motion-reduce:transform-none hover:-translate-y-1 hover:scale-110 transition ease-in-out duration-300 bg-gray-200 text-blue-700">
-            <div class="max-w-full h-48 rounded overflow-hidden shadow-lg">
-                <div class="px-6 py-4">
-                  <div class="font-bold text-xl mb-2 mt-6">Telkom University Graduate</div>
-                  <p class="text-gray-700 text-base">
-                    Grade Point Average: 3.34
-                    <br>
-                    Specialization: Network and Multimedia
-                    <br>
-                    Final Assignment Topic: Mobile Cloud Gaming
-                  </p>
-                </div>
-            </div>
-        </button>
-        <button class="max-w-md transform motion-reduce:transform-none hover:-translate-y-1 hover:scale-110 transition ease-in-out duration-300 bg-gray-200 text-blue-700">
-            <div class="max-w-full h-48 rounded overflow-hidden shadow-lg">
-                <div class="px-6 py-4">
-                  <div class="font-bold text-xl mb-2 mt-6">Workshop and Training Certifications</div>
-                  <p class="text-gray-700 text-base">
-                    Badan Nasional Sertifikasi Profesi
-                    <br>
-                    Dicoding Academy
-                    <br>
-                    Sanbercode Academy
-                    <br>
-                    Etc
-                  </p>
-                </div>
-            </div>
-        </button>   
-    </div>
-
-    <div class="container mx-auto my-12 grid grid-cols-2">
-        <div class="font-mono text-2xl mr-8">
-            Experiences
-            <hr>
-            <div class="mt-4 flex mb-4">
-                <h4 class="w-1/4 text-lg text-blue-700">
-                    <strong>NOC Internship</strong>
-                </h4>
-                <div class="w-3/4 inline-block ml-8">
-                    <h3 class="text-lg text-indigo-500"><strong>Asosiasi Penyelenggara Jasa Internet</strong></h3>
-                    <h3 class="text-sm text-gray-600">June 2019 - July 2019</h3>
-                </div>
-            </div>
-            <div class="mt-4 flex mb-4">
-                <h4 class="w-1/4 text-lg text-blue-700">
-                    <strong>Student Internship</strong>
-                </h4>
-                <div class="w-3/4 inline-block ml-8">
-                    <h3 class="text-lg text-indigo-500"><strong>Wilayah Telkom 1</strong></h3>
-                    <h3 class="text-sm text-gray-600">June 2018 - August 2018</h3>
-                </div>
-            </div>
-        </div>
-        <div class="font-mono text-2xl ml-8">
-            Educations
-            <hr>
-            <div class="mt-4 flex mb-4">
-                <h4 class="w-1/4 text-lg text-blue-700">
-                    <strong>Bachelor</strong>
-                </h4>
-                <div class="w-3/4 inline-block ml-8">
-                    <h3 class="text-lg text-indigo-500"><strong>Telecommunication Engineering</strong></h3>
-                    <h3 class="text-sm text-gray-600">Telkom University, 2016 - 2020</h3>
-                </div>
-            </div>
-        </div>
-    </div>
+   </div>
+   <script src="js/porto.js"></script>
 </body>
 </html>
