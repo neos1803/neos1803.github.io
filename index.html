@@ -17,7 +17,7 @@
                 <!-- <img class ='top-image' src='./asset/1.jpg' alt='picture of a man sitting down viewing graphs off an iPad'> -->
             </div>
             <div class="lowProfile">
-                <img class ='profile-image mx-auto' src='./asset/2.jpg' alt='picture of a man sitting down viewing graphs off an iPad'>
+                <img class ='profile-image mx-auto' src='./asset/2.jpg' alt='my alternate profile picture'>
                 <div class="link-section mt-4 ml-4" style="font-family: 'Inconsolata', serif;">
                     <p class="text-4xl">Nanda W. Purba</p>
                     <p class="text-xl">Tech Enthusiast</p>
@@ -32,8 +32,7 @@
             <footer class="mt-24">
                 <div class="mx-16 text-center text-sm" style="font-family: 'Inconsolata', serif;">
                     <p> COPYRIGHT ©
-                        This website is built by Nanda W. Purba and powered by github.io. 
-                        Be ashamed if you are trying to imitate this imperfect website &#128536;
+                        This website is built by Nanda W. Purba and powered by github.io.
                     </p>
                 </div>
             </footer>
@@ -49,9 +48,9 @@
                         <br>
                         <p>I'm an engineering graduate and currently employed by Universitas Terbuka as Back End Developer, but the contracts is still can't be seen.</p>
                         <br>
-                        <p>I only have 1 year of professional job experience, but i (perhaps) have enough knowledge/understanding in back end development, data analyst and/or python 3 development,
+                        <p>I have less than 3 years of professional job experience, but i (perhaps) have enough knowledge/understanding in back end development, data analyst and/or python 3 development,
                             and i have taken part in several projects during my time in Universitas Terbuka.
-                        However, as you can see by this page, i'm not that good at front-end development.
+                        However, as you can see by this page, i'm not that good at front-end development and interface design.
                         </p>
                     </div>
                     <div class="ml-4">
@@ -72,7 +71,10 @@
                                         Anime Bingewatching -> <a class="hover:text-indigo-600" href="https://myanimelist.net/profile/War_D/reviews">(Check out my anime reviews on MAL)</a>
                                     </li>
                                     <li>
-                                        Competitive/Non-competitive Gaming
+                                        Google Maps Reviewing -> <a class="hover:text-indigo-600" href="https://www.google.com/maps/contrib/112460776932130665924/reviews">(Check out my reviews on Google Maps)</a>
+                                    </li>
+                                    <li>
+                                        Sharing Code on Gist -> <a class="hover:text-indigo-600" href="https://gist.github.com/neos1803">(Check out my gist)</a>
                                     </li>
                                 </ol>
                             </li>
@@ -92,7 +94,56 @@
                 </div>
             </div>
             <div id="about" class="about-text text-indigo-600 py-6 px-6 text-3xl" style="font-family: 'Source Code Pro', serif;">
-                <h1>Portfolio</h1>
+                <h1>Professional Portfolio</h1>
+            </div>
+            <div class="about-info py-6 px-6 bg-white mx-6 rounded-lg" style="font-family: 'Inconsolata', serif;">
+                <ol class="ml-4 mt-4" style="list-style: square;">
+                    <li class="mb-4">
+                        <a class="hover:text-indigo-600" href="#">Student Record System (Universitas Terbuka Corporate Project)</a>
+                        <br>
+                        <p>This project is one of Universitas Terbuka main apps which is still on going and will keep improving.
+                        This project is built with several tech stacks such as PostgreSQL and NestJS as its backend and database,
+                        GraphQL as its API communication and Vue as its front-end.
+                        </p>
+                        <br>
+                        <p>
+                        I am assigned to develop some of it backend features and often participate in the group discussion for features improvement or application architecture defining.
+                        We were thinking of transforming the old monolithic student record system into a brand new microservice based architecture, but due to several technical and non technical reasons we ended up
+                        designing an anti-microservice architecture.
+                        Here is the simplify version of this project architecture design
+                        </p>
+                        <br>
+                        <img style="width: 70%; margin: 0 auto;" src='./asset/srs_architecture.png' alt='picture of a man sitting down viewing graphs off an iPad'>
+                        <br>
+                        <p>
+                        To summarized, we use kubernetes for auto scaling. We also use RabbitMQ as the message broker for inter service communication. The side services are created for supporting jobs,
+                        such as automation for students 365 accounts, realtime notification by listening database change, event based notification from each service, a read only caching implemented with redis
+                        and other supporting feature to reduce the load of main backend service. Currrently, the MongoDB is used for notification logging only, but there will be improvements.
+                        </p>
+                        <br>
+                        <p>
+                        I am also assigned for innovation and such which is quite challenging. As far as today, i manage to improve the notification system by implementing microservice, utilizing postgre listener 
+                        to implement real time event and solving its long running problem regarding user unique identifier by applying queue. Currently, i am proposing an idea which covers deep learning and automation.
+                        </p>
+                    </li>
+                    <li class="mb-4">
+                        <a class="hover:text-indigo-600" href="#">Aplikasi Praktikum (Universitas Terbuka Corporate Project)</a>
+                        <br>
+                        <p>Another Universitas Terbuka Project and this time is about an app that helps their students on practice-based subjects. This project is developed and built with microservice architecture and several tech stacks
+                        such as MongoDB, MySQL, ExpressJS (with Typescript), Redis, and Vue, but its development is postponed due to several reasons. The design architecture is coming soon.
+                        </p>
+                    </li>
+                    <li class="mb-4">
+                        <a class="hover:text-indigo-600" href="https://api-sisupel.ut.ac.id/graphql">Sisupel (Universitas Terbuka Corporate Project)</a>
+                        <br>
+                        <p>Another Universitas Terbuka Project and this time is about an app that helps their students on giving feedback and rating their services. This project is developed and built with several tech stacks
+                        such as MongoDB, NestJS, Redis, and Vue. The design architecture is coming soon.
+                        </p>
+                    </li>
+                </ol>
+            </div>
+            <div id="about" class="about-text text-indigo-600 py-6 px-6 text-3xl" style="font-family: 'Source Code Pro', serif;">
+                <h1>Others Portfolio</h1>
             </div>
             <div class="about-info py-6 px-6 bg-white mx-6 rounded-lg" style="font-family: 'Inconsolata', serif;">
                 <ol class="ml-4 mt-4" style="list-style: square;">
@@ -166,38 +217,17 @@
                         and blade only as its Front-end framework</p>
                     </li>
                     <li class="mb-4">
-                        <a class="hover:text-indigo-600" href="#">Student Record System (Universitas Terbuka On-going Corporate Project)</a>
-                        <br>
-                        <p>Universitas Terbuka Project, about their student record system. This project is still on going with several tech stacks such as PostgreSQL and NestJS as its backend and database,
-                            GraphQL as its API communication and Vue as its front-end.
-                        </p>
-                    </li>
-                    <li class="mb-4">
-                        <a class="hover:text-indigo-600" href="#">Aplikasi Praktikum (Universitas Terbuka Corporate Project)</a>
-                        <br>
-                        <p>Another Universitas Terbuka Project and this time is about an app that helps their students on practice-based subjects. This project is developed and built with microservice architecture and several tech stacks
-                            such as MongoDB, MySQL, ExpressJS (with Typescript), Redis, and Vue, but its development is postponed due to several reasons, including personal reasons.
-                        </p>
-                    </li>
-                    <li class="mb-4">
-                        <a class="hover:text-indigo-600" href="https://api-sisupel.ut.ac.id/graphql">Sisupel (Universitas Terbuka Corporate Project)</a>
-                        <br>
-                        <p>Another Universitas Terbuka Project and this time is about an app that helps their students on giving feedback and rating their services. This project is developed and built with several tech stacks
-                            such as MongoDB, NestJS, Redis, and Vue. Click <a class="hover:text-indigo-600" href="https://api-sisupel.ut.ac.id/graphql">this</a> to view the example of the GraphQL Api.
-                        </p>
-                    </li>
-                    <li class="mb-4">
-                        <a class="hover:text-indigo-600" href="#">Ampaba (VendorKamu On-going Project)</a>
-                        <br>
-                        <p>One of VendorKamu, my side job place as backend developer, project which is about an app that helps on maintaining Gym Online System. This project is developed and built with several tech stacks
-                            such as MySQL, NestJS, Redis as its Backend Core. Click <a class="hover:text-indigo-600" href="#">this</a> to view the example of the GraphQL Api.
-                        </p>
-                    </li>
-                    <li class="mb-4">
                         <a class="hover:text-indigo-600" href="#">Bookstore API</a>
                         <br>
                         <p>My personal project which is about an app that scraps a books review-recommendation website and several e-commerce website to find . I developed this project using express built with Typescript.
                             Click <a class="hover:text-indigo-600" href="#">this</a> to view the docs of the API.
+                        </p>
+                    </li>
+                    <li class="mb-4">
+                        <a class="hover:text-indigo-600" href="#">Ampaba (VendorKamu Cancelled Project)</a>
+                        <br>
+                        <p>One of VendorKamu, my side job place as backend developer, project which is about an app that helps on maintaining Gym Online System. This project is developed and built with several tech stacks
+                            such as MySQL, NestJS, Redis as its Backend Core. Click <a class="hover:text-indigo-600" href="#">this</a> to view the example of the GraphQL Api.
                         </p>
                     </li>
                 </ol>
