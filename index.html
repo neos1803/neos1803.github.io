@@ -9,6 +9,20 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Robot|Source+Code+Pro|Inconsolata">
 
     <title>Ardi's Page</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            function checkViewportSize() {
+                if (window.innerWidth < 1024) {
+                    document.getElementById("modal").style.display = "block";
+                } else {
+                    document.getElementById("modal").style.display = "none";
+                }
+            }
+
+            checkViewportSize();
+            window.onresize = checkViewportSize;
+        });
+    </script>
 </head>
 <body class="bg-gray-200">
    <div class="flex">
@@ -17,14 +31,13 @@
                 <!-- <img class ='top-image' src='./asset/1.jpg' alt='picture of a man sitting down viewing graphs off an iPad'> -->
             </div>
             <div class="lowProfile">
-                <img class ='profile-image mx-auto' src='./asset/2.jpg' alt='my alternate profile picture'>
+                <img class ='profile-image mx-auto' src='./asset/new.png' alt='my alternate profile picture'>
                 <div class="link-section mt-4 ml-4" style="font-family: 'Inconsolata', serif;">
                     <p class="text-4xl">Nanda W. Purba</p>
-                    <p class="text-xl">Tech Enthusiast</p>
+                    <p class="text-xl">Backend Developer</p>
                 </div>
                 <div class="mt-4 ml-4" style="font-family: 'Inconsolata', serif;">
                     <p class="text-sm mb-4">I'm available on:</p>
-                    <a href="https://twitter.com/_NandaPurba_"><img class="inline w-8 mr-4" src="./asset/twitter.png" alt=""></a>
                     <a href="https://github.com/neos1803?tab=repositories"><img class="inline w-8 mr-4" src="./asset/git.png" alt=""></a>
                     <a href="https://www.linkedin.com/in/nanda-purba-923121154/"><img class="inline w-8" src="./asset/link.png" alt=""></a>
                 </div>
@@ -44,13 +57,17 @@
             <div class="about-info py-6 px-6 bg-white mx-6 rounded-lg" style="font-family: 'Inconsolata', serif;">
                 <div class="grid grid-cols-2">
                     <div class="intro border-r-2 border-black">
-                        <p>Hey, I'm Nanda W. Purba. Ardi, Nanda or Purba, feel free to call me by those names but i prefer being called by Ardi.</p>
+                        <p>Greetings. I'm an engineering graduate and currently employed by Universitas Terbuka as Back End Developer, or more like Technical Consultant.</p>
                         <br>
-                        <p>I'm an engineering graduate and currently employed by Universitas Terbuka as Back End Developer, but the contracts is still can't be seen.</p>
-                        <br>
-                        <p>I have less than 3 years of professional job experience, but i (perhaps) have enough knowledge/understanding in back end development, data analyst and/or python 3 development,
+                        <p>I have more or less 3 years of professional job experience, but i (perhaps) have enough knowledge/understanding in back end development, data analyst and/or python 3 development,
                             and i have taken part in several projects during my time in Universitas Terbuka.
                         However, as you can see by this page, i'm not that good at front-end development and interface design.
+                        </p>
+                        <br>
+                        <p>
+                            I really don't have much portofolio to show since most of my job is discussing about "what kind of architecture should we use", "should we really use or implement this", "why this bug happens"
+                            or "I need to find a way to handle this error". Yes, full of discussion, suggesting and debugging, besides of coding. In my current workspace, i often find myself in the middle of mess i did't create 
+                            and expected to clear it or make it works.
                         </p>
                     </div>
                     <div class="ml-4">
@@ -68,13 +85,10 @@
                                         Random Programming -> <a class="hover:text-indigo-600" href="https://github.com/neos1803?tab=repositories">(Check out my github)</a>
                                     </li>
                                     <li>
-                                        Anime Bingewatching -> <a class="hover:text-indigo-600" href="https://myanimelist.net/profile/War_D/reviews">(Check out my anime reviews on MAL)</a>
-                                    </li>
-                                    <li>
-                                        Google Maps Reviewing -> <a class="hover:text-indigo-600" href="https://www.google.com/maps/contrib/112460776932130665924/reviews">(Check out my reviews on Google Maps)</a>
-                                    </li>
-                                    <li>
                                         Sharing Code on Gist -> <a class="hover:text-indigo-600" href="https://gist.github.com/neos1803">(Check out my gist)</a>
+                                    </li>
+                                    <li>
+                                        Competitive Gaming -> <a class="hover:text-indigo-600">Currently i take part in kind of semi-professional Efootball League.</a>
                                     </li>
                                 </ol>
                             </li>
@@ -87,6 +101,23 @@
                                     <li>
                                         Data Analyst
                                     </li>
+                                    <li>
+                                        Probably anything that don't involve interface designing
+                                    </li>
+                                </ol>
+                            </li>
+                            <li class="mb-2">
+                                Language(s):
+                                <ol class="ml-4" style="list-style: square;">
+                                    <li>
+                                        Indonesian (Native)
+                                    </li>
+                                    <li>
+                                        English (I guess it's good enough for discussing something technical and daily life)
+                                    </li>
+                                    <li>
+                                        Japanese (N4)
+                                    </li>
                                 </ol>
                             </li>
                         </ol>
@@ -98,6 +129,16 @@
             </div>
             <div class="about-info py-6 px-6 bg-white mx-6 rounded-lg" style="font-family: 'Inconsolata', serif;">
                 <ol class="ml-4 mt-4" style="list-style: square;">
+                    <li class="mb-4">
+                        <a class="hover:text-indigo-600" href="https://api-sisupel.ut.ac.id/graphql">AI Assisted Learning</a>
+                        <br>
+                        <p>This is a project about how can we integrate our GPT-based model to our online learning ecosystem which is Moodle based. The project is still on going,
+                        but we have implemented this on more or less 5000 thousands student. The concept is simple-yet-controversional. We plan to create an environment where
+                        teacher and AI can coexist to teach students or maybe reduce the redundant workload of teachers. Other than coding, integration and such, i also take most part of 
+                        designing what architecture we want to implement.
+                        Ps: Our solution got mentioned and noticed by current CEO of Microsoft, Satya Nadela. You can see it on my linkedin post.
+                        </p>
+                    </li>
                     <li class="mb-4">
                         <a class="hover:text-indigo-600" href="#">Student Record System (Universitas Terbuka Corporate Project)</a>
                         <br>
@@ -148,24 +189,9 @@
             <div class="about-info py-6 px-6 bg-white mx-6 rounded-lg" style="font-family: 'Inconsolata', serif;">
                 <ol class="ml-4 mt-4" style="list-style: square;">
                     <li class="mb-4">
-                        <a class="hover:text-indigo-600" href="https://github.com/neos1803/Bootcamp-UT/tree/master/js-cli-app-challenge">CLI App</a>
+                        <a class="hover:text-indigo-600" href="https://medium.com/@ardipurba">Medium Articles</a>
                         <br>
-                        <p>A simple Command Line Interface Application that executes several commands. Built and coded with Javascript.</p>
-                    </li>
-                    <li class="mb-4">
-                        <a class="hover:text-indigo-600" href="https://github.com/neos1803/Bootcamp-UT/tree/master/todoapp">Todo App ft Mongoose (CLI Based)</a>
-                        <br>
-                        <p>A simple Command Line Interface Application that executes CRUD command about Todo list which connected to local mongodb server. Built and coded with Javascript.</p>
-                    </li>
-                    <li class="mb-4">
-                        <a class="hover:text-indigo-600" href="https://github.com/neos1803/Bootcamp-UT/tree/master/sequelize">Todo App ft Sequelize (CLI Based)</a>
-                        <br>
-                        <p>A simple Command Line Interface Application that executes CRUD command about Todo list which connected to local mysql server. Built and coded with Javascript.</p>
-                    </li>
-                    <li class="mb-4">
-                        <a class="hover:text-indigo-600" href="https://github.com/neos1803/Bootcamp-UT/tree/master/python-tasks/weathermap_cli">Weather App (CLI Based)</a>
-                        <br>
-                        <p>A simple Command Line Interface Application that executes several commands related to weather condition. Built with Open Weather API and Python 3.</p>
+                        <p>Sometimes i write an article about what technical problem i have faced and how i handle it. So far i have written 14 articles which can be count as my other portofolio.</p>
                     </li>
                     <li class="mb-4">
                         <a class="hover:text-indigo-600" href="https://github.com/neos1803/learning-python">Simple Python Programs</a>
@@ -175,7 +201,7 @@
                     <li class="mb-4">
                         <a class="hover:text-indigo-600" href="https://github.com/neos1803/learning-with-kaggle">Titanic: Machine Learning From Disaster</a>
                         <br>
-                        <p>Introduction challenge to data science which taken from Kaggle. This Analyse only has 75% accuracy points &#128531;</p>
+                        <p>Introduction challenge to data science which taken from Kaggle.</p>
                     </li>
                     <li class="mb-4">
                         <a class="hover:text-indigo-600" href="https://github.com/neos1803/twitter-bot">Simple Twitter Bot</a>
@@ -235,5 +261,13 @@
         </div>
    </div>
    <script src="js/porto.js"></script>
+   <script>
+        // This script will run after a delay once the page is fully loaded
+        window.onload = function() {
+            setTimeout(function() {
+                alert("Make sure to display this in or as desktop mode, since this is not responsive and i am bad in frontend development.");
+            }, 100); // Delay in milliseconds
+        };
+    </script>
 </body>
 </html>
