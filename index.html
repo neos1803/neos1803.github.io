@@ -9,20 +9,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Robot|Source+Code+Pro|Inconsolata">
 
     <title>Nanda W. Purba Resume</title>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            function checkViewportSize() {
-                if (window.innerWidth < 1024) {
-                    document.getElementById("modal").style.display = "block";
-                } else {
-                    document.getElementById("modal").style.display = "none";
-                }
-            }
-
-            checkViewportSize();
-            window.onresize = checkViewportSize;
-        });
-    </script>
 </head>
 <body class="bg-gray-200">
    <div class="flex">
@@ -59,8 +45,7 @@
                     <div class="intro border-r-2 border-black">
                         <p>Greetings. I'm an engineering graduate and currently employed by Universitas Terbuka as Back End Developer, or more like Technical Consultant.</p>
                         <br>
-                        <p>I have more or less 3 years of professional job experience, but i (perhaps) have enough knowledge/understanding in back end development, data analyst and/or python 3 development,
-                            and i have taken part in several projects during my time in Universitas Terbuka.
+                        <p>I have more or less 3 years of professional job experience, but i (perhaps) have enough knowledge/understanding in back end development and i have taken part in several projects during my time in Universitas Terbuka.
                         However, as you can see by this page, i'm not that good at front-end development and interface design.
                         </p>
                         <br>
@@ -69,6 +54,10 @@
                             or "I need to find a way to handle this error". Yes, full of discussion, suggesting and debugging, besides of coding. In my current workspace, i often find myself in the middle of mess i did't create 
                             and expected to clear it or make it works.
                         </p>
+                        <br>
+                        <p>
+                            Check out my medium articles <a class="hover:text-indigo-600" href="https://medium.com/@ardipurba">(here)</a>. I write what problems/challenge i have faced and the solutions. This can be used as one of my portofolio.
+                        </p>
                     </div>
                     <div class="ml-4">
                         <ol>
@@ -76,6 +65,34 @@
                                 Education(s):
                                 <ol class="ml-4" style="list-style: square;">
                                     <li>Telecommunication Engineering (B.Eng), Telkom University, 2016 - 2020, GPA: 3.31</li>
+                                </ol>
+                            </li>
+                            <li class="mb-2">
+                                Programming Languages Preferance (in desc order):
+                                <ol class="ml-4" style="list-style: square;">
+                                    <li>
+                                        Typescript
+                                    </li>
+                                    <li>
+                                        Golang
+                                    </li>
+                                    <li>
+                                        Javascript
+                                    </li>
+                                    <li>
+                                        Python
+                                    </li>
+                                </ol>
+                            </li>
+                            <li class="mb-2">
+                                Interest(s):
+                                <ol class="ml-4" style="list-style: square;">
+                                    <li>
+                                        Back-end/API Development
+                                    </li>
+                                    <li>
+                                        Probably anything that doesn't involve interface designing
+                                    </li>
                                 </ol>
                             </li>
                             <li class="mb-2">
@@ -89,20 +106,6 @@
                                     </li>
                                     <li>
                                         Competitive Gaming -> <a class="hover:text-indigo-600">Currently i take part in kind of semi-professional Efootball League.</a>
-                                    </li>
-                                </ol>
-                            </li>
-                            <li class="mb-2">
-                                Interest(s):
-                                <ol class="ml-4" style="list-style: square;">
-                                    <li>
-                                        Back-end/API Development
-                                    </li>
-                                    <li>
-                                        Data Analyst
-                                    </li>
-                                    <li>
-                                        Probably anything that don't involve interface designing
                                     </li>
                                 </ol>
                             </li>
@@ -135,9 +138,11 @@
                         <p>This is a project about how can we integrate our GPT-based model to our online learning ecosystem which is Moodle based. The project is still on going,
                         but we have implemented this on more or less 5000 thousands student. The concept is simple-yet-controversional. We plan to create an environment where
                         teacher and AI can coexist to teach students or maybe reduce the redundant workload of teachers. Other than coding, integration and such, i also take most part of 
-                        designing what architecture we want to implement.
-                        Ps: Our solution got mentioned and noticed by current CEO of Microsoft, Satya Nadela. You can see it on my linkedin post.
+                        designing what architecture we want to implement. Our solution got mentioned and noticed by current CEO of Microsoft, Satya Nadela. You can see it on my linkedin post.
                         </p>
+                        <br>
+                        <img style="width: 70%; margin: 0 auto;" src='./asset/ai_assisted.jpg' alt=''>
+                        <br>
                     </li>
                     <li class="mb-4">
                         <a class="hover:text-indigo-600" href="#">Student Record System (Universitas Terbuka Corporate Project)</a>
@@ -188,11 +193,6 @@
             </div>
             <div class="about-info py-6 px-6 bg-white mx-6 rounded-lg" style="font-family: 'Inconsolata', serif;">
                 <ol class="ml-4 mt-4" style="list-style: square;">
-                    <li class="mb-4">
-                        <a class="hover:text-indigo-600" href="https://medium.com/@ardipurba">Medium Articles</a>
-                        <br>
-                        <p>Sometimes i write an article about what technical problem i have faced and how i handle it. So far i have written 14 articles which can be count as my other portofolio.</p>
-                    </li>
                     <li class="mb-4">
                         <a class="hover:text-indigo-600" href="https://github.com/neos1803/learning-python">Simple Python Programs</a>
                         <br>
@@ -249,25 +249,10 @@
                             Click <a class="hover:text-indigo-600" href="#">this</a> to view the docs of the API.
                         </p>
                     </li>
-                    <li class="mb-4">
-                        <a class="hover:text-indigo-600" href="#">Ampaba (VendorKamu Cancelled Project)</a>
-                        <br>
-                        <p>One of VendorKamu, my side job place as backend developer, project which is about an app that helps on maintaining Gym Online System. This project is developed and built with several tech stacks
-                            such as MySQL, NestJS, Redis as its Backend Core. Click <a class="hover:text-indigo-600" href="#">this</a> to view the example of the GraphQL Api.
-                        </p>
-                    </li>
                 </ol>
             </div>
         </div>
    </div>
    <script src="js/porto.js"></script>
-   <script>
-        // This script will run after a delay once the page is fully loaded
-        window.onload = function() {
-            setTimeout(function() {
-                alert("Make sure to display this in or as desktop mode, since this is not responsive and i am bad at frontend development.");
-            }, 100); // Delay in milliseconds
-        };
-    </script>
 </body>
 </html>
